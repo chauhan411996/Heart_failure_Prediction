@@ -10,3 +10,5 @@ People with cardiovascular disease or who are at high cardiovascular risk (due t
 
 This Web App is used to predict whether you are safe or you are at risk with the help of some input parameter i.e, age,sex,platelets,follow up period and so on.
 
+![](static/Capture5.PNG)
+![](static/Capture4.PNG)
