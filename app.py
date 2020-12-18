@@ -20,13 +20,17 @@ def predict():
     if request.method == 'POST':
         age = int(request.form['age'])
         cp = int(request.form['creatinine_phosphokinase'])
+	dia = int(request.form['diabetes'])
         ef = int(request.form['ejection_fraction'])
         hbp = int(request.form['high_blood_pressure'])
         plt = int(request.form['platelets'])
         sc = float(request.form['serum_creatinine'])
+	ss = int(request.form['serum_sodium'])
+	sex = int(request.form['sex'])
+	smok= int(request.form['smoking'])
         time = int(request.form['time'])
         
-        data = np.array([[age, cp, ef, hbp, plt, sc, time]])
+        data = np.array([[age, dia, cp, ef, hbp, plt, sc, ss, sex, smok, time]])
         my_prediction = classifier.predict(data)
         
         return render_template('result.html', prediction=my_prediction)
