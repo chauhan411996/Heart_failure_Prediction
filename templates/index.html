@@ -25,10 +25,14 @@
     		<form action="{{ url_for('predict') }}" method="POST">
                 <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 25"><br>
                 <input class="form-input" type="text" name="creatinine_phosphokinase" placeholder="Level of the CPK enzyme in the blood (mcg/L) eg. 580"><br>
+                <input class="form-input" type="text" name="diabetes" placeholder="Patient has diabetes eg. 0 for No,1 for Yes"><br>
                 <input class="form-input" type="text" name="ejection_fraction" placeholder="% of Blood leaving the heart at each contraction eg. 80"><br>
                 <input class="form-input" type="text" name="high_blood_pressure" placeholder="Patient has high BP eg. 0 for No,1 for Yes"><br>
                 <input class="form-input" type="text" name="platelets" placeholder="Platelets in the blood (kiloplatelets/mL) eg. 250000"><br>
                 <input class="form-input" type="text" name="serum_creatinine" placeholder="Level of serum creatinine in the blood (mg/dL) eg. 1.3"><br>
+                <input class="form-input" type="text" name="serum_sodium" placeholder="Level of serum sodium in the blood (mEq/L) eg. 137"><br>
+                <input class="form-input" type="text" name="sex" placeholder="Gender eg. 0 for Female,1 for Male"><br>
+                <input class="form-input" type="text" name="smoking" placeholder="Smoking eg. 0 for No,1 for Yes"><br>
                 <input class="form-input" type="text" name="time" placeholder="Follow-up period (days) eg. 130"><br>
 
         		<input type="submit" class="my-cta-button" value="Predict">
